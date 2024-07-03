@@ -1,5 +1,5 @@
 # Building a SOC + Honeynet in Azure (Live Traffic)
-![Cloud Honeynet / SOC](https://github.com/marcus-peters/Avure-soc/assets/174356617/e33e2402-98b9-4979-a908-0f7201615e2a)
+![Cloud Honeynet / SOC](https://github.com/marcus-peters/Azure-SOC/assets/174356617/a4ff6bff-75cd-48f8-8ec2-ed29fc9d46d5)
 
 
 ## Introduction
@@ -13,11 +13,14 @@ In this project, I build a mini honeynet in Azure and ingest log sources from va
 - AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
 
 ## Architecture Before Hardening / Security Controls
-![Architecture Diagram](https://github.com/marcus-peters/Avure-soc/assets/174356617/4f0ba84d-8dcc-433a-a059-c3bc294d58bf)
+![Architecture Diagram](https://github.com/marcus-peters/Azure-SOC/assets/174356617/57b96a1a-7e69-40c5-bef4-df4c7067e877)
 aBDwnKb.jpg)
 
+
 ## Architecture After Hardening / Security Controls
-![Architecture Diagram](https://github.com/marcus-peters/Avure-soc/assets/174356617/f9c92337-476d-4dc1-8882-19d56e0dc4e6)
+![Architecture Diagram](https://github.com/marcus-peters/Azure-SOC/assets/174356617/2d23d14c-f27d-4d0e-918c-89119908ea0d)
+
+
 
 
 The architecture of the mini honeynet in Azure consists of the following components:
@@ -35,14 +38,15 @@ For the "BEFORE" metrics, all resources were originally deployed, exposed to the
 For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
 
 ## Attack Maps Before Hardening / Security Controls
-![NSG Allowed Inbound Malicious Flows](https://github.com/marcus-peters/Avure-soc/assets/174356617/cd5ce98d-4a30-428a-bdd5-75459d1b427a)
+![NSG Allowed Inbound Malicious Flows](https://github.com/marcus-peters/Azure-SOC/assets/174356617/467770d5-a111-4f92-b616-7c3594c4a6ee)
 <br>
-![Linux Syslog Auth Failures](https://github.com/marcus-peters/Avure-soc/assets/174356617/81bd9bde-29da-4cf8-9fa0-5aca09e5b178)
+![Linux Syslog Auth Failures](https://github.com/marcus-peters/Azure-SOC/assets/174356617/e0e2f89e-e263-4467-9ac3-d4c7a3db0939)
 <br>
-![Windows RDP/SMB Auth Failures](https://github.com/marcus-peters/Avure-soc/assets/174356617/cf60e86f-6741-4fab-88d4-7a44e692bf49)
+![Windows RDP/SMB Auth Failures](https://github.com/marcus-peters/Azure-SOC/assets/174356617/5edc0848-aeed-4f0d-9cc1-0ba72a6d067b)
 <br>
-![MSSQL Auth Failures](https://github.com/marcus-peters/Avure-soc/assets/174356617/133dfa97-e76f-4d94-8cfb-a9da75cb2387)
+![MSSQL Auth Failures](https://github.com/marcus-peters/Azure-SOC/assets/174356617/9b667fd2-1c23-4f45-a6a6-8bfb9b069276)
 <be>
+
 
 ## Metrics Before Hardening / Security Controls
 
